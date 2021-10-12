@@ -1,10 +1,22 @@
-### Introduction
+# Introduction
 
 This repository contains a stripped down version of
 [collect.Ordering](https://github.com/abc-inc/goava/tree/feature/ordering/collect/ordering)
 from [github.com/abc-inc/goava](https://github.com/abc-inc/goava/), which is heavily inspired by [Guava](https://github.com/google/guava).
 
 This repository is created solely for reproducing a internal compiler error in Go 1.18 as of 2021-10-09.
+
+## Update
+
+On 2021-10-12, the bug was fixed in https://golang.org/cl/355250.
+
+The test passes with
+<pre>
+$ gotip version
+go version devel go1.18-d032b2b 2021-10-12 20:20:41 +0000 linux/amd64
+</pre>
+
+## Go [Issue #48889](https://github.com/golang/go/issues/48889) on GitHub
 
 ### What version of Go are you using (`go version`)?
 
